@@ -1,5 +1,6 @@
 dist/
 .DS_Store
+todo.md
 
 # dependencies
 /node_modules
