@@ -11,7 +11,7 @@ Add `plugin` and `safelist` in TailwindCSS configuration https://github.com/pato
   safelist: ['zen--suspend', 'zen--animate', 'zen--reduced']
 ```
 
-Initialize TW Zen zero-dependency intersection handler with `useEffect` on the page, https://github.com/patoi/tw-zen-example-nextjs/blob/4ce6fd7709db3e190301dc9db54e60eeb27e490c/pages/index.tsx#L7 :
+Initialize TW Zen zero-dependency intersection handler with `useEffect` on the page, https://github.com/patoi/tw-zen-example-nextjs/blob/4ce6fd7709db3e190301dc9db54e60eeb27e490c/pages/index.tsx#L7-L11 :
 
 ```javascript
   useEffect(() => {
