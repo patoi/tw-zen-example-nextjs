@@ -1,10 +1,10 @@
-# Next.js + Tailwind CSS + TW Zen Example
+# Next.js + TailwindCSS + TW Zen Example
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) and [TW Zen](https://github.com/patoi/tw-zen) animation plugin with Next.js.
+This example shows how to use [TailwindCSS](https://tailwindcss.com/) and [TW Zen](https://github.com/patoi/tw-zen) animation plugin with Next.js.
 
 ## Create animation
 
-1. Add `plugin` and `safelist` in TailwindCSS configuration https://github.com/patoi/tw-zen-example-nextjs/blob/main/tailwind.config.js :
+1. Add `plugin` and `safelist` in TailwindCSS configuration [TailwindCSS Config](https://github.com/patoi/tw-zen-example-nextjs/blob/main/tailwind.config.js) :
 
 ```text
   plugins: [require('tw-zen')],
@@ -23,7 +23,7 @@ This example shows how to use [Tailwind CSS](https://tailwindcss.com/) and [TW Z
 
 3. Add TW classes, for example: https://github.com/patoi/tw-zen-example-nextjs/blob/main/pages/index.tsx
 
-```javascript
+```html
 <h1 id="example-zen-fade" className="zen zen-fade ...">
 
 <div id="example-zen-spin-forever" className="zen zen-spin-forever ...">🌟</div>
@@ -32,9 +32,9 @@ This example shows how to use [Tailwind CSS](https://tailwindcss.com/) and [TW Z
 
 <a id="example-zen-pop-up-only-once" className="zen zen-once zen-pop-up ...">
 
-<a id="example-zen-from-left" className="zen zen-from-left...">
+<a id="example-zen-from-left" className="zen zen-from-left ...">
 
-<a id="example-zen-from-left" className="zen zen-from-right...">
+<a id="example-zen-from-left" className="zen zen-from-right ...">
 
 <Image id="example-zen-spin-with-pause" className="zen zen-pause zen-spin-forever" ...>
 ```
