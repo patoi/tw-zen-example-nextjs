@@ -25,17 +25,11 @@ This example shows how to use [TailwindCSS](https://tailwindcss.com/) and [TW Ze
 
 ```html
 <h1 id="example-zen-fade" className="zen zen-fade ...">
-
 <div id="example-zen-spin-forever" className="zen zen-spin-forever ...">🌟</div>
-
 <a id="example-zen-pop-up-always" className="zen zen-pop-up ...">
-
 <a id="example-zen-pop-up-only-once" className="zen zen-once zen-pop-up ...">
-
 <a id="example-zen-from-left" className="zen zen-from-left ...">
-
 <a id="example-zen-from-left" className="zen zen-from-right ...">
-
 <Image id="example-zen-spin-with-pause" className="zen zen-pause zen-spin-forever" ...>
 ```
 
