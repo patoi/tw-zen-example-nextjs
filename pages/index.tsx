@@ -35,8 +35,8 @@ const Home: NextPage = () => {
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           <a
             id="example-zen-pop-up-always"
-            href="https://nextjs.org/docs"
             className="zen zen-pop-up mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
+            href="https://nextjs.org/docs"
           >
             <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
             <p className="mt-4 text-xl">

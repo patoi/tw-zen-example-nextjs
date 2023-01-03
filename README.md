@@ -1,27 +1,42 @@
-# Next.js + Tailwind CSS Example
+# Next.js + Tailwind CSS + TW Zen Example
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This example shows how to use [Tailwind CSS](https://tailwindcss.com/) and [TW Zen](https://github.com/patoi/tw-zen) animation plugin with Next.js.
 
-## Deploy your own
+## Create animation
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Add `plugin` and `safelist` in TailwindCSS configuration https://github.com/patoi/tw-zen-example-nextjs/blob/main/tailwind.config.js :
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+```json
+  plugins: [require('tw-zen')],
+  safelist: ['zen--suspend', 'zen--animate', 'zen--reduced']
 ```
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+Initialize TW Zen zero-dependency intersection handler with `useEffect` on the page, https://github.com/patoi/tw-zen-example-nextjs/blob/4ce6fd7709db3e190301dc9db54e60eeb27e490c/pages/index.tsx#L7 :
+
+```javascript
+  useEffect(() => {
+    import('tw-zen/init').then(twZenInit => {
+      twZenInit.default()
+    })
+  }, [])
 ```
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+Add TW classes, for example: https://github.com/patoi/tw-zen-example-nextjs/blob/main/pages/index.tsx
+
+```javascript
+<h1 id="example-zen-fade" className="zen zen-fade ...">
+
+<div id="example-zen-spin-forever" className="zen zen-spin-forever ...">🌟</div>
+
+<a id="example-zen-pop-up-always" className="zen zen-pop-up ...">
+
+<a id="example-zen-pop-up-only-once" className="zen zen-once zen-pop-up ...">
+
+<a id="example-zen-from-left" className="zen zen-from-left...">
+
+<a id="example-zen-from-left" className="zen zen-from-right...">
+
+<Image id="example-zen-spin-with-pause" className="zen zen-pause zen-spin-forever" ...>
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
