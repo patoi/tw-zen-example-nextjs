@@ -6,7 +6,7 @@ This example shows how to use [Tailwind CSS](https://tailwindcss.com/) and [TW Z
 
 Add `plugin` and `safelist` in TailwindCSS configuration https://github.com/patoi/tw-zen-example-nextjs/blob/main/tailwind.config.js :
 
-```json
+```text
   plugins: [require('tw-zen')],
   safelist: ['zen--suspend', 'zen--animate', 'zen--reduced']
 ```
