@@ -12,12 +12,12 @@ const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
-        <title>TW Zen example with Next.js</title>
+        <title>TW example with Next.js</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 id="example-zen-fade" className="zen zen-fade text-6xl font-bold">
+        <h1 id="example-zen-fade" className="zen-fade text-6xl font-bold">
           Welcome to{' '}
           <a className="text-blue-600" href="https://nextjs.org">
             Next.js!
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         </h1>
 
         <div className="mt-3 text-2xl">
-          <div id="example-zen-spin-forever" className="zen zen-spin-forever p-8 text-4xl">🌟</div>
+          <div id="example-zen-spin-forever" className="zen-spin-forever p-8 text-4xl">🌟</div>
           <div>Get started by editing{' '}</div>
           <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
             pages/index.tsx
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           <a
             id="example-zen-pop-up-always"
-            className="zen zen-pop-up mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
+            className="zen-pop-up mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
             href="https://nextjs.org/docs"
           >
             <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
           <a
           id="example-zen-pop-up-only-once"
             href="https://nextjs.org/learn"
-            className="zen zen-once zen-pop-up mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
+            className="zen-once zen-pop-up mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">Learn &rarr;</h3>
             <p className="mt-4 text-xl">
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
           <a
             id="example-zen-from-left"
             href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="zen zen-from-left mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
+            className="zen-from-left mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">Examples &rarr;</h3>
             <p className="mt-4 text-xl">
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
           <a
             id="example-zen-from-right"
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="zen zen-from-right mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
+            className="zen-from-right mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
             <p className="mt-4 text-xl">
@@ -87,7 +87,7 @@ const Home: NextPage = () => {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <Image id="example-zen-spin-with-pause" className="zen zen-pause zen-spin-forever" src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          <Image id="example-zen-spin-with-pause" className="zen-pause zen-spin-forever" src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
         </a>
       </footer>
     </div>
