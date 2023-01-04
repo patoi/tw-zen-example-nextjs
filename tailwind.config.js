@@ -10,5 +10,5 @@ module.exports = {
     extend: {},
   },
   plugins: [require('tw-zen')],
-  safelist: ['zen--suspend', 'zen--animate', 'zen--reduced']
+  safelist: ['zen--suspend', 'zen--off', 'zen--reduced']
 }
