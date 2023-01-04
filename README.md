@@ -10,7 +10,7 @@ Try it: `pnpm install && pnpm dev`, open: http://localhost:3000 and shrink the p
 
 ```text
   plugins: [require('tw-zen')],
-  safelist: ['zen--suspend', 'zen--animate', 'zen--reduced']
+  safelist: ['zen--suspend', 'zen--off', 'zen--reduced']
 ```
 
 2. Initialize TW Zen zero-dependency intersection handler with `useEffect` on the page:
