@@ -9,7 +9,7 @@ Try it: `pnpm install && pnpm dev`, open: http://localhost:3000 and shrink the p
 1. Add `plugin` and `safelist` in TailwindCSS configuration [TailwindCSS Config](https://github.com/patoi/tw-zen-example-nextjs/blob/main/tailwind.config.js) :
 
 ```text
-  plugins: [require('tw-zen')],
+  plugins: [require('tw-zen-plugin')],
   safelist: ['zen--suspend', 'zen--off', 'zen--reduced']
 ```
 
@@ -17,7 +17,7 @@ Try it: `pnpm install && pnpm dev`, open: http://localhost:3000 and shrink the p
 
 ```javascript
   useEffect(() => {
-    import('tw-zen/init').then(twZenInit => {
+    import('tw-zen-plugin/init').then(twZenInit => {
       twZenInit.default()
     })
   }, [])

@@ -9,6 +9,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require('tw-zen')],
+  plugins: [require('tw-zen-plugin')],
   safelist: ['zen--suspend', 'zen--off', 'zen--reduced']
 }

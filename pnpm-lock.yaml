@@ -13,7 +13,7 @@ specifiers:
   react: 18.2.0
   react-dom: 18.2.0
   tailwindcss: ^3.2.4
-  tw-zen: link:../tw-zen
+  tw-zen-plugin: link:../tw-zen-plugin
   typescript: 4.9.4
 
 dependencies:
@@ -29,7 +29,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   tailwindcss: 3.2.4_postcss@8.4.20
-  tw-zen: link:../tw-zen
+  tw-zen-plugin: link:../tw-zen-plugin
   typescript: 4.9.4
 
 packages:
