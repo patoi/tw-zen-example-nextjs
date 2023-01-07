@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 
 const Home: NextPage = () => {
   useEffect(() => {
-    import('tw-zen-plugin/init').then(twZenInit => {
+    import('@patoi/tw-zen-plugin/init').then(twZenInit => {
       twZenInit.default()
     })
   }, [])
