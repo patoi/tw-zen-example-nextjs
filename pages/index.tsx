@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         </h1>
 
         <div className="mt-3 text-2xl">
-          <div id="example-zen-spin-forever" className="zen-spin-forever p-8 text-4xl">🌟</div>
+          <div id="example-zen-spin-forever" className="zen-spin-forever zen-pause p-8 text-4xl">🌟</div>
           <div>Get started by editing{' '}</div>
           <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
             pages/index.tsx
@@ -87,7 +87,7 @@ const Home: NextPage = () => {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <Image id="example-zen-spin-with-pause" className="zen-pause zen-spin-forever" src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          <Image id="example-zen-spin-with-pause" className="zen-spin-forever zen-pause" src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
         </a>
       </footer>
     </div>
